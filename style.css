@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+padding: 0%;
+box-sizing: border-box;
+}
+
+:root{
+--primary: #fbb534;
+--black: #000;
+--white: #fff;
+--textColor1: #ccc;
+--textColor2: #3d3c3c;
+--padding: 30px 100px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-image: url(images/hero-bg.png); 
+    height: 100vh;
+}
+
+header .logo{
+    display: flex;
+} 
+
+header .logo img{
+    padding: 30px;
+}
+
+header .logo a{
+    text-transform: uppercase; 
+    font-weight: 700; 
+    font-size: large; 
+    color: var(--black); 
+    align-self: center;
+}
+
+header .header{
+    display: flex;
+}
+
+header .header .logo a{
+    text-decoration: none;
+}
+
+header .header nav{
+    display: flex; 
+    padding: 50px; 
+    margin: auto;
+}
+
+header .header nav a{
+    margin-right: 100px; 
+    color: var(--white); 
+    text-decoration: none;
+}
+
+header .hero{
+    display: flex; 
+    padding: 0 170px;
+}
+
+header .hero .prviDeo h2{
+    font-size:x-large; 
+    font-weight: 500; 
+    font-size: 2.5rem;
+}
+
+header .hero .prviDeo h1{
+    font-size:xx-large; 
+    font-weight:bolder; 
+    font-size: 5rem; 
+    padding-bottom: 50px;
+}
+
+header .hero .prviDeo p{
+    padding-bottom: 50px;
+}
+
+header .hero .prviDeo button{
+    background: var(--black);
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--white);
+    margin: auto;
+    transition: 0.5s;
+}
+
+header .hero .prviDeo button:hover{
+    background: var(--white);
+    color: var(--black); cursor: pointer;
+}
+
+header .hero .drugiDeo img{
+    margin-left: 100px; 
+    height: 85vh;
+} 
+
+.bestPrice{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 40px; 
+    padding-bottom: 80px;
+}
+
+.bestPrice article{
+    border: 1px solid var(--textColor1); 
+    padding: 10px; 
+    margin: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestPrice img{
+    height: 150px;
+}
+
+/* .bestPrice article img{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+} */
+
+.bestPrice h3{
+    text-transform: uppercase;
+}
+
+.bestPrice .orange{ 
+    color: var(--primary); 
+    font-weight: 500;
+}
+
+.bestPrice .black{ 
+    font-weight: 500;
+}
+
+.about{
+    display: flex; 
+    padding: 0 170px;
+}
+
+.about .tekst h2{
+    font-size:x-large; 
+    font-weight: 500; 
+    font-size: 2.5rem; 
+    padding-bottom: 50px;
+}
+
+.about .tekst p{
+    padding-bottom: 50px;
+}
+
+.about .tekst button{
+    background: var(--black);
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--white);
+    margin: auto;
+    transition: 0.5s;
+}
+
+.about .tekst button:hover{
+    background: var(--white);
+    color: var(--black); 
+    cursor: pointer;
+}
+
+.about .slika img{
+    height: 80vh; 
+    padding-top: 0;}
+
+
+.our h2{
+    font-size:x-large; 
+    font-weight: 500; 
+    font-size: 2.5rem; 
+    padding-bottom: 50px; 
+    padding-top: 50px; 
+    padding-left: 170px;
+}
+
+.our .ponuda{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 40px; 
+    padding-bottom: 80px;
+}
+
+.our .ponuda article{
+    border: 1px solid var(--textColor1); 
+    padding: 10px; 
+    margin: 20px;
+    width: 370px;
+}
+
+.our .ponuda button{
+    background: var(--white);
+    padding: 12px 40px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--black);
+    margin: auto;
+    transition: 0.5s;
+}
+
+.our .ponuda button:hover{
+    background: var(--white);
+    color: var(--primary); 
+    cursor: pointer; 
+    border-color: var(--primary);
+} 
+    
+.our .ponuda img{
+    padding-top: 80px; 
+    padding-bottom: 80px;
+}  
+
+.our .ponuda .pare{
+    color: var(--primary)
+}
+
+.our .ponuda .ponudaPrvi{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.our .ponuda .ponudaDrugi{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.our .ponuda .ponudaTreci{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.our .ponuda .ponudaPrvi .cena h3{
+    display: flex;
+}
+
+.our .ponuda .ponudaDrugi .cena h3{
+    display: flex;
+}
+
+.our .ponuda .ponudaTreci .cena h3{
+    display: flex;
+}
+    
+
+.our .ponuda .ponudaPrvi button{
+    margin-bottom: 30px; 
+    margin-top: 30px;
+}
+
+.our .ponuda .ponudaDrugi button{
+    margin-bottom: 30px; 
+    margin-top: 30px;
+}
+
+.our .ponuda .ponudaTreci button{
+    margin-bottom: 30px; 
+    margin-top: 30px;
+}
+
+.our .zadnjeDugme {
+    background: var(--black);
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--white);
+    margin: auto;
+    transition: 0.5s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.our .zadnjeDugme:hover{
+    background: var(--white);
+    color: var(--black); 
+    cursor: pointer;
+}    
+
+.special h3{
+    text-transform: uppercase; 
+    color: var(--primary); 
+    font-weight: 500; 
+    font-size: 1.5rem;
+} 
+
+.special h2{
+    font-size:x-large; 
+    font-weight: 500; 
+    font-size: 2.5rem; 
+    padding-top: 20px;
+}
+
+.special{
+    display: flex; 
+    padding: 30px;
+}
+
+.special button{
+    background: var(--white);
+    color: var(--black); 
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px; 
+    margin: auto;
+    transition: 0.5s;
+}
+
+.special button:hover{
+    cursor: pointer;
+}    
+
+.special .ring1{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 170px;
+}
+
+.special .ring2{
+    margin-left: 70px;
+}
+
+.testimonial{
+    padding: 30px 170px;
+}
+
+.testimonial h2{
+    font-size:x-large; 
+    font-weight: 500; 
+    font-size: 2.5rem; 
+    padding-top: 20px;
+}
+
+.testimonial h2, h3{
+    text-align: center;
+}
+
+.testimonial .aliqua{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 20px;
+
+}
+
+.testimonial .aliqua h5{
+    color: var(--primary);
+}
+
+.testimonial .aliqua .naslovi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    flex: 0 0 25%
+}
+
+.forma h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.forma .podaci{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forma .podaci input{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin: 15px;
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+    border-color: var(--textColor1);
+}
+
+.forma .podaci .poruka{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.forma button{
+    background: var(--primary);
+    color: var(--white); 
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px; 
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 30%;
+    border-color: var(--primary);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.forma button:hover{
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--textColor2);
+    height: 70vh;
+}
+
+footer .footer .logo{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--white);
+} 
+
+footer .footer .logo a{
+    text-transform: uppercase; 
+    font-weight: 700; 
+    font-size: large; 
+    color: var(--black); 
+    align-self: center;
+}
+
+footer .footer .logo img{
+    padding-left: 170px;
+    padding-right: 30px;
+
+}
+
+footer .footer{
+    display: flex; 
+}
+
+footer .footer .kontakt{
+    display: flex; 
+    padding: 40px; 
+    margin: auto;
+}
+
+footer .footer .kontakt a{
+    margin-right: 100px; 
+    color: var(--white); 
+    text-decoration: none;
+}
+
+footer h3{
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+footer .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+footer .email input{
+    height: 40px;
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+footer .email button{
+    background: var(--primary);
+    color: var(--white); 
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px; 
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 30%;
+    border-color: var(--primary);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+footer .email button:hover{
+    cursor: pointer;
+}
+
+footer .mreze{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 10px 500px;
+}
+
+footer .kraj{
+    text-align: center;
+}
+
+footer .kraj hr{
+    width: 30%;
+    margin-left: 530px;
+    margin-bottom: 30px;
+}
+
+footer .kraj p{
+    margin-bottom: 50px;
+}
+
+
+
+
+
